@@ -1,7 +1,7 @@
 {
-  "name": "goit-nodejs-hw-01",
+  "name": "goit-nodejs-hw",
   "version": "1.0.0",
-  "homepage": "https://github.com/DenisSgh/goit-nodejs-hw-01#readme",
+  "homepage": "https://github.com/DenisSgh/goit-nodejs-hw#readme",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,11 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DenisSgh/goit-nodejs-hw-01.git"
+    "url": "git+https://github.com/DenisSgh/goit-nodejs-hw.git"
   },
   "author": "Denis Singh",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "commander": "^8.2.0"
   }
 }

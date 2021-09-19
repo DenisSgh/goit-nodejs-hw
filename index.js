@@ -2,11 +2,11 @@ const {
   listContacts,
   getContactById,
   addContact,
-  updateContact,
+  updateContactById,
   removeContact,
-} = require("./contacts");
+} = require("./contacts/index");
 const { Command } = require("commander");
-const colors = require("colors");
+require("colors");
 const program = new Command();
 
 program
@@ -54,7 +54,7 @@ async function invokeAction({ action, id, name, email, phone }) {
 
     case "update":
       try {
-        const contact = await updateContact(id, name, email, phone);
+        const contact = await updateContactById(id, name, email, phone);
         if (!contact) {
           throw new Error("Not found :(");
         }

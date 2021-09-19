@@ -53,7 +53,6 @@ async function updateContact(contactId, name, email, phone) {
 async function removeContact(contactId) {
   const contacts = await listContacts();
   const idx = contacts.findIndex((contact) => contact.id === +contactId);
-  console.log(contactId);
 
   if (idx === -1) return null;
   // contacts.splice(idx, 1);

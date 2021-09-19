@@ -17,6 +17,7 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "commander": "^8.2.0"
   }
 }

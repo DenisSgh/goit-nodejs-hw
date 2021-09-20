@@ -20,7 +20,9 @@ program.parse(process.argv);
 
 const options = program.opts();
 
-async function invokeAction({ action, id, name, email, phone }) {
+(async () => {
+  const { action, id, name, email, phone } = options;
+
   switch (action) {
     case "list":
       try {
@@ -79,6 +81,4 @@ async function invokeAction({ action, id, name, email, phone }) {
     default:
       console.warn("\x1B[31m Unknown action type!");
   }
-}
-
-invokeAction(options);
+})();
